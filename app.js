@@ -27,6 +27,7 @@ function replayQuiz(){
         questionNum = 0;
         $('#score').html(score)
         $('.question-display').show();
+        $('.score-card').hide();
         renderQuestion();
     })
 }
@@ -65,7 +66,9 @@ function generateQuestion(){
                                 <fieldset class="answer-choice">
                                     <legend id="current-question">${STORE[questionNum-1].question}</legend>
                                     <div class="answer-box"></div>
-                                     <input class="btn" type="submit" value="Submit">                      
+                                    <div class="answer-btn"> 
+                                        <input class="btn" type="submit" value="Submit">
+                                    </div>
                                 </fieldset>  
                             </form>`);
         let answerBox = $(formTemplate).find('.answer-box')
@@ -88,35 +91,38 @@ function validateAnswer(){
         if (answerChoice == correctAnswer) {
             score++;
             $('#score').html(score)
-            return `<form class="question-form">
-            <div class="correct-box">
-                <h3 class="correct-text"> That's right! Good Job!</h3>
-                <img class="result-box-img" src="img/SuccessKid.jpg" alt="big brain">
-            </div>
-            <input class="btn" id="next-btn" type="submit" value="Next">
-        </form>`
+            return `<div class="correct-box">
+                        <h3 class="correct-text"> That's right! Good Job!</h3>
+                        <img class="result-box-img" src="img/SuccessKid.jpg" alt="big brain">
+                        <form class="button-form">
+                            <input class="btn" id="next-btn" type="submit" value="Next">
+                        </form>
+                    </div>`
         } else {
             return `<div class="incorrect-box">
                         <h3 class="incorrect-text"> Sorry, that's not quite right!</h3>
                         <p>The answer is actually <br>
                         <span class="wrong-answer">${correctAnswer}</span></p>
                         <img class="result-box-img" src="${image}" alt="${imageAlt}">
-                    </div>
-                    <form class="question-form">
-                        <input class="btn" id="next-btn" type="submit" value="Next">
-                    </form>`
+                        <form class="button-form">
+                            <input class="btn" id="next-btn" type="submit" value="Next">
+                        </form>
+                    </div>`
         }
 }
 
 //Display gameover screen
 function gameOver(){
     $('.question-display').hide();
-    return `<h3>Wow! you got <span class="score">${score} </span>out of ${STORE.length} right!</h2>
+    $('.score-card').hide();
+    return `<h3>Wow! You got <span class="score">${score} </span>out of ${STORE.length} right!</h2>
                     <form class="question-form">
-                        <div class="result-img-box">
-                            <img class="result-box-img" src="img/Brain-Painting.jpg">
-                        </div>
-                        <input class="btn" id="replay-button" type="submit" value="Try Again?">
+                        <div class="finish-box">
+                            <h3> Want to give it another try?</h3>
+                            <div class="btn-controls">
+                                <input class="btn" id="replay-button" type="submit" value="Replay">
+                            </div>
+                        </div> 
                 </form>`
 }
 

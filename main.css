@@ -6,12 +6,16 @@ header{
 }
 footer{
     text-align: right;
+    max-width: 720px;
+    margin:auto;
 }
 main{
     text-align: center;
 }
 .result-box-img{
     height: 100px;
+    display: block;
+    margin:auto;
 }
 .answer-input{
     text-align: left;
@@ -19,26 +23,80 @@ main{
 body{
     background-image: url(img/dark-background.jpeg);
 }
-.btn{
-    color:black;
+
+.btn-contols{
+    display: flex;
+    justify-content: flex-end;
 }
+
 #start-button{
     color:black;
 }
-
+.answer-btn{
+    display: flex;
+    justify-content: flex-end;
+}
 .correct-box{
     border: 3px solid green;
+    padding-bottom: 6px;
+    max-width: 720px;
+    margin: auto;
+    height: 50%;
 }
 
 .incorrect-box{
     border: 3px solid red;
+    padding-bottom: 6px;
+    max-width: 720px;
+    margin: auto;
+    height: 50%;
 }
 
 .answer-box{
     text-align: left;
 }
-
+.wrong-answer{
+    text-decoration: underline;
+}
 .btn{
+    margin-top: 10px;
+    height: 2em; 
+    width: 25%;
+    color:black;
+    max-width: 720px;
+    margin-right: 10px;   
+}
+legend{
+    margin:0;
+    padding:0;
+}
+#next-btn{
+    background-color: rgb(247, 247, 6);
+}
+.button-form{
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+}
+
+.question-form{
+    max-width: 720px;
+    margin: auto;
+}
+.finish-box{
+    border: 3px solid yellow;
+    padding-bottom: 10px;
+    max-width: 720px;
+    margin: auto;
+    height: 100px;
+    padding-top: 10px;
+}
+#replay-button{
+    height: 100%;
+    border: 1px solid yellow;
+}
+.correct-text{
+    color: rgb(10, 243, 10);
+}
+.incorrect-text{
+    color: rgb(248, 18, 18);
 }
