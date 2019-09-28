@@ -14,15 +14,18 @@
 
     <header role="banner" class="banner">
             <h1>The Medics Quiz</h1>
-            <p>Question <span id="question-number">0</span> of <span>10</span></p>
+            <p class="question-display">Question<span id="question-number"> 0</span> of <span>10</span></p>
     </header>
     <main>
-        <h2>Are you ready to begin?</h2>
         <form class="question-form">
-            <input type="submit" value="Start">
+            <fieldset class="answer-choice">
+                <div class="container">
+                    <legend id="current-question">This quiz will test your knowlege of the human body</legend>
+                    <p>Are you ready to begin?</p>
+                    <input class="btn" id="start-button" type="submit" value="Start">
+                </div> 
+            </fieldset>
         </form>
-
-
     </main>
     
     <footer class="score-card">Score: <span id="score">0</span> of <span>10</span></footer>

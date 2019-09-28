@@ -9,7 +9,9 @@ const STORE = [
           'Skin',
           'Liver'
       ],
-      correctAns: 'Skin'  
+      correctAns: 'Skin',
+      image: 'https://vignette.wikia.nocookie.net/rickandmorty/images/4/40/PM-169.png/revision/latest?cb=20170405054457',
+      imageAlt: 'Skin suit'
     },
 
     { // Q 2
@@ -20,7 +22,9 @@ const STORE = [
             'Kidney and Liver',
             'Intestines and Stomach'
         ],
-        correctAns: 'Brain and Spinal Cord'
+        correctAns: 'Brain and Spinal Cord',
+        image: 'img/BrainSpinalCordlabld.jpg',
+        imageAlt: 'Brain and spinal cord'
     },
 
     { // Q 3
@@ -31,7 +35,9 @@ const STORE = [
             'Arterioles',
          'Veins'
         ],
-        correctAns: 'Veins'
+        correctAns: 'Veins',
+        image: 'img/4-blood.jpg',
+        imageAlt: 'Blood cells'
     },
 
     { // Q 4
@@ -42,7 +48,9 @@ const STORE = [
             'Cell Membrane',
             'Ribosomes'
         ],
-        correctAns: 'Mitochondria'
+        correctAns: 'Mitochondria',
+        image: 'img/palp.jpg',
+        imageAlt: 'Unlimited power'
     },
 
     { // Q 5
@@ -53,7 +61,9 @@ const STORE = [
             'Reproductive System',
             'Endocrine System'
         ],
-        correctAns: 'Endocrine System'
+        correctAns: 'Endocrine System',
+        image: 'img/022018_sleep_work_stress.jpg',
+        imageAlt: 'Sleeping on the job'
     },
 
     { // Q 6
@@ -64,7 +74,9 @@ const STORE = [
             'Foramen Magnum',
             'Femur'
         ],
-        correctAns: 'Femur'
+        correctAns: 'Femur',
+        image: 'img/dog-and-bone.jpg',
+        imageAlt: 'A large bone'
     },
 
     { // Q 7
@@ -75,7 +87,9 @@ const STORE = [
             'Cannabinoid',
             'Benzodiazepine'
         ],
-        correctAns: 'Benzodiazepine'
+        correctAns: 'Benzodiazepine',
+        image: 'img/brainslug.jpg',
+        imageAlt: 'Brain Drain'
     },
 
     { // Q 8
@@ -86,7 +100,9 @@ const STORE = [
             'Alcohol',
             'Water'
         ],
-        correctAns: 'Water'
+        correctAns: 'Water',
+        image: 'img/budlight.jpg',
+        imageAlt: 'Water'
     },
 
     { // Q 9
@@ -97,7 +113,9 @@ const STORE = [
             'Sunlight',
             'Oxygen'
         ],
-        correctAns: 'Oxygen'
+        correctAns: 'Oxygen',
+        image: 'img/oxygen-483628539-350x350.jpg',
+        imageAlt: 'Chemical image of O2'
     },
 
     { // Q 10
@@ -108,6 +126,8 @@ const STORE = [
             'none',
             '3'
         ],
-        correctAns: '2'
+        correctAns: '2',
+        image: 'img/brain.jpeg',
+        imageAlt: 'Big Brain'
     }
 ]

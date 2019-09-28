@@ -1,5 +1,4 @@
 *{
-    background-image: url(img/2560x1440-blue-abstract-noise-free-website-background-image.jpg);
     color: white;
 }
 header{
@@ -12,5 +11,34 @@ main{
     text-align: center;
 }
 .result-box-img{
-    width: 50%;
+    height: 100px;
+}
+.answer-input{
+    text-align: left;
+}
+body{
+    background-image: url(img/dark-background.jpeg);
+}
+.btn{
+    color:black;
+}
+#start-button{
+    color:black;
+}
+
+.correct-box{
+    border: 3px solid green;
+}
+
+.incorrect-box{
+    border: 3px solid red;
+}
+
+.answer-box{
+    text-align: left;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end; 
 }
