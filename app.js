@@ -75,7 +75,7 @@ function generateQuestion(){
     
         STORE[questionNum-1].answers.forEach(function (answer, index) {
             $(answerBox).append(`<label for="${index}">
-            <input type="radio" id="${index}" 
+            <input type="radio" id="${index}" class="answer-text" 
             value="${answer}" name="answer" required>${answer}</label><br>`)
             })  
 
