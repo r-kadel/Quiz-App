@@ -88,8 +88,8 @@ const STORE = [
             'Benzodiazepine'
         ],
         correctAns: 'Benzodiazepine',
-        image: 'img/Brainslug.jpg',
-        imageAlt: 'Brain Drain'
+        image: 'img/pills.jpg',
+        imageAlt: 'Pills'
     },
 
     { // Q 8
